@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.cailu.openbtn"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //  compile 'com.android.support:appcompat-v7:23.4.0'
+    //圆形图的引用  网址: https://github.com/a396901990/RatingView
+    //有问题没有使用
+    compile 'com.deanguo.ratingview:library:1.3.0'
+    //volley的引用
+    compile 'com.android.volley:volley:1.0.0'
+    //v7包的引用
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    //回收视图和卡片视图的引用
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    //材料设计向下兼容包的引用
+    compile 'com.android.support:design:25.0.0'
+    //gson
+    //谷歌的app引用服务不小点出来的，。不知道有什么用
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //谷歌的GSON
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.google.code.gson:gson-parent:2.8.0'
+    //glidede 图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //基于IJKPlayer的播放器，重构了JieCaoVideoPlayer，调整了代码和优化了动画，添加了自定义功能
+    compile 'com.shuyu:gsyVideoPlayer:1.3.1'
+    //ViewPagerIndicator
+    compile 'com.shizhefei:ViewPagerIndicator:1.1.4'
+   // 由于用到了v4和recyclerview所以也要导入他们
+    /*compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'*/
+
+
+    compile project(':zxinglite')
+}

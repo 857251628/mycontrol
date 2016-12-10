@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cailu.control">
+
+    <application
+        android:name="com.example.cailu.control.MainActivity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.cailu.control.MainActivity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cailu.control.customcontrol.openbutton.Activityopenbtn"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.example.cailu.control.Function.RatingView.Activityratingview"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.example.cailu.control.control.FragemtTab.FragmentTabActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.example.cailu.control.control.WebView.WebviewActivity" />
+        <activity android:name="com.example.cailu.control.control.ViewPager.ActivityViewPager" />
+        <activity android:name="com.example.cailu.control.Function.Progressbar_AsyncTask.ActivityProgressbar" />
+        <activity android:name="com.example.cailu.control.Function.VolleyDemo.ActivityVolley" />
+        <activity android:name="com.example.cailu.control.HttpDemo.ActivityHttp" />
+        <activity android:name="com.example.cailu.control.customcontrol.ImageModify.ActivityImage" />
+        <activity android:name="com.example.cailu.control.customcontrol.ImageModify.Imageprimary" />
+        <activity android:name="com.example.cailu.control.customcontrol.ImageModify.CollorMatrix" />
+        <activity android:name="com.example.cailu.control.customcontrol.ImageModify.PixelsEffect" />
+        <activity android:name="com.example.cailu.control.android5control.AndroidRecyview.ActivityAndroid5" />
+        <activity android:name="com.example.cailu.control.android5control.Android5Nav.ActivityAndroid5NavView" />
+        <activity android:name="com.example.cailu.control.customcontrol.TuLingRobot.ActivityTuLin" />
+        <activity android:name="com.example.cailu.control.android5control.Android5BottomNav.Android5BottomNav" />
+        <activity android:name="com.example.cailu.control.Function.titlebargon.ActivityTitlebarGone" />
+        <activity android:name="com.example.cailu.control.Function.Headreplacement.ActivityHeadreplacement" />
+        <activity android:name="com.example.cailu.control.Function.popup.ActivityPopup" />
+        <activity android:name="com.example.cailu.control.Function.Magnify.ActivityMagnify" />
+        <activity android:name="com.example.cailu.control.customcontrol.ScrollContainer.ActivityScrollViewContainer" />
+
+        <!--视频的-->
+        <activity
+            android:name="com.example.cailu.control.GSYvideplay.ActivityGSYVideo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.cailu.control.GSYvideplay.PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.example.cailu.control.GSYvideplay.ListVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.example.cailu.control.GSYvideplay.ListVideo2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity android:name="com.example.cailu.control.GSYvideplay.DetailPlayer" />
+
+        <!--  二维码zxing   -->
+        <activity android:name="com.example.cailu.control.customcontrol.Zxing.ActivityZxing" />
+        <activity android:name="com.example.cailu.control.customcontrol.Zxing.DefaultCaptureActivity" />
+        <activity android:name="com.example.cailu.control.customcontrol.Zxing.WeChatCaptureActivity" />
+
+
+        <!--Tabviewpager-->
+        <activity android:name="com.example.cailu.control.customcontrol.tabmain.TabMainActivity"/>
+
+
+        <!--   //对Srevice进行声明。-->
+        <service android:name="com.example.cailu.control.HttpDemo.DowndloadService" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+
+    <!--//对网络权限进行的声明。-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--//允许获取当前网络状态，优化录音参数及网络参数-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--//读取联系人-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--  //读取手机状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--//录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--//无线网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--  //对sd卡权限进行的声明。-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

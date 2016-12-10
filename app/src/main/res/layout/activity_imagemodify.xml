@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="图片修改"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="primary"
+        android:text="primary" />
+
+    <Button
+        android:id="@+id/collo_rmatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="collormatrix"
+        android:text="collor_matrix" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pixelseffect"
+        android:onClick="pixelseffect"/>
+</LinearLayout>

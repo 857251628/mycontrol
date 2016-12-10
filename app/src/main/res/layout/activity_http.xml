@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/http_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载名称："
+        android:textSize="20dp"
+        android:elevation="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/http_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/http_jindu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度："
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/http_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/http_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:textSize="20dp" />
+</LinearLayout>

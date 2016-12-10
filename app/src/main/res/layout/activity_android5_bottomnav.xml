@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_bottomnav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#02bffd"></android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/activity_bottomnav_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_above="@+id/activity_bottomnav_item"
+        android:layout_below="@+id/activity_bottomnav_toolbar"></FrameLayout>
+
+    <include
+        layout="@layout/item_bottomnav"
+        android:id="@+id/activity_bottomnav_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
